@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 
 export default class SideBar extends Component {
 
 
-  constructor(props){
+  constructor(props) {
     super()
-    this.state=({
+    this.state = ({
 
     })
-  } 
+  }
 
 
   render() {
@@ -31,40 +31,47 @@ export default class SideBar extends Component {
             <div className="input-group">
               <input type="text" name="q" className="form-control" placeholder="Search..." />
               <span className="input-group-btn">
-                                      <button type="submit" name="search" id="search-btn" className="btn btn-flat"><i className="fa fa-search"></i>
-                                      </button>
-                                  </span>
+                <button type="submit" name="search" id="search-btn" className="btn btn-flat"><i className="fa fa-search"></i>
+                </button>
+              </span>
             </div>
           </form>
           <ul className="sidebar-menu" data-widget="tree">
             <li className="header">MAIN NAVIGATION</li>
             <li>
-              <Link to ='/'>
-                                      <i className="fa fa-files-o"></i>
-                                      <span>Patient Name</span>
-                                      <span className="pull-right-container">
-                                      <span className="label label-primary pull-right">4</span>
-                                      </span>
-                                  </Link>
+              <Link to='/'>
+                <i className="fa fa-files-o"></i>
+                <span>Patient Name</span>
+                <span className="pull-right-container">
+                </span>
+              </Link>
 
             </li>
             <li>
-              <Link to = '/sendPatient'>
-                                  <i className="fa fa-th">
-                                  </i> <span>Send Patient</span>
-                                  <span className="pull-right-container">
-                                  <small className="label pull-right bg-green">new</small>
-                                  </span>
-                              </Link>
+              <Link to = '/createPatient'>
+              <i className="fa fa-files-o"></i>
+              <span>Create Patient</span>
+              <span className="pull-right-container">
+              </span>
+              </Link>
+            </li>
+            <li>
+              <Link to='/sendPatient'>
+              
+                <i className="fa fa-th">
+                </i> <span>Send Patient</span>
+                <span className="pull-right-container">
+                </span>
+              </Link>
             </li>
             <li className="treeview">
               <a href="#">
-                                  <i className="fa fa-pie-chart"></i>
-                                  <span>Charts</span>
-                                  <span className="pull-right-container">
-                                  <i className="fa fa-angle-left pull-right"></i>
-                                  </span>
-                              </a>
+                <i className="fa fa-pie-chart"></i>
+                <span>Charts</span>
+                <span className="pull-right-container">
+                  <i className="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
               <ul className="treeview-menu">
                 <li><a href="pages/charts/chartjs.html"><i className="fa fa-circle-o"></i> ChartJS</a></li>
                 <li><a href="pages/charts/morris.html"><i className="fa fa-circle-o"></i> Morris</a></li>

@@ -46,3 +46,16 @@
     transform: rotate(360deg);
   }
 }
+.alignCenter {
+  text-align: center;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 2px;
+}
+
+tr:nth-child(even) {
+  /* background-color: #dddddd; */
+}

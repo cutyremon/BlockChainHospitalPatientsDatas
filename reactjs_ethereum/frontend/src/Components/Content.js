@@ -53,7 +53,7 @@ setSickShowByPatient=(patient)=>{
 
               <Sick  getRecordMedecal= {this.props.getRecordMedecal} patient= {this.state.patient} sickCodeByPatient = {this.props.sickCodeByPatient}/>
 
-              <RecordMedical  recordMedical= {this.props.recordMedical} />
+              <RecordMedical patient={this.state.patient}  recordMedical= {this.props.recordMedical} />
             
               
               </div>

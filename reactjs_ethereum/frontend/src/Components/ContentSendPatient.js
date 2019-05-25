@@ -5,7 +5,7 @@ export default class ContentSendPatient extends Component {
 constructor(props){
     super();
     this.state = {
-      PatientDetail:{name:"nonane",cmt:0,age:0,sex:0,live:false}
+      PatientDetail:{name:"nonane",cmt:"no number",age:0,sex:0,live:false}
         
     }
 
@@ -14,11 +14,15 @@ handlSetPatientTransport=(id)=>{
   this.props.patientData.map((data)=>{
     if(data[0].c==id){
       let name = data[1];
-      let cmt= data[2].toNumber();
+      let cmt= data[2];
       let age = data[3].toNumber();
-      let live = data[4];
+      let gender = data[4].toNumber();
+let gender1 ;
+      if(gender==1) gender1 ="Male"
+      else if(gender == 2) gender1 = "Female"
+      else gender1="other"
       this.setState({
-        PatientDetail:{name,cmt,age,live}
+        PatientDetail:{name,cmt,age,gender1}
         
       })
       console.log("data" + data+ typeof(data));
@@ -66,6 +70,8 @@ handlSetPatientTransport=(id)=>{
               <li>Name:{this.state.PatientDetail.name}</li>
               <li>Age:{this.state.PatientDetail.age}</li>
               <li>cmt:{this.state.PatientDetail.cmt}</li>
+              <li>gender:{this.state.PatientDetail.gender1}</li>
+              
             </ul>
             
 
