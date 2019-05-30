@@ -4,6 +4,10 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "fs-extra": "^8.0.1",
+    "ipfs": "^0.36.2",
+    "ipfs-api": "^26.1.2",
+    "ipfs-image-web-upload": "^1.0.5",
     "react": "^16.8.6",
     "react-awesome-modal": "^2.0.5",
     "react-bootstrap": "^1.0.0-beta.8",

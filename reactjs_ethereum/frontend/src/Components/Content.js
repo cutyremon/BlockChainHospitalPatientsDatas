@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Patient from './Patient';
 import Sick from './Sick';
 import RecordMedical from './RecordMedical';
+import CreateMedical from './CreateMedical';
+
 
 export default class Content extends Component {
 constructor(props){
@@ -54,6 +56,8 @@ setSickShowByPatient=(patient)=>{
               <Sick  getRecordMedecal= {this.props.getRecordMedecal} patient= {this.state.patient} sickCodeByPatient = {this.props.sickCodeByPatient}/>
 
               <RecordMedical patient={this.state.patient}  recordMedical= {this.props.recordMedical} />
+              <CreateMedical/>
+
             
               
               </div>

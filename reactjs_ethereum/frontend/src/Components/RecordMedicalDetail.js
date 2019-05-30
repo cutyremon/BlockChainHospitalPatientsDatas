@@ -56,7 +56,7 @@ class RecordMedicalDetail extends Component {
           </div>
         </div>
         <div className="row">
-          <div>
+          <div className="col-md-6" >
             <table>
               <tr>
                 <th>Tên các xét nghiệm</th>
@@ -73,6 +73,10 @@ class RecordMedicalDetail extends Component {
               })
             }
             </table>
+          </div>
+          <div className="col-md-4">
+          <img name="image" src="img/img1.jpg" alt=""/>
+          <h3>chụp X quang</h3>
           </div>
         </div>
         <div className="row">
